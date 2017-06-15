@@ -7,7 +7,7 @@ RUN \
     rm -rf /var/lib/apt/lists/*
 
 RUN \
-    pip install influxdb w1thermsensor
+    pip3 install influxdb w1thermsensor
 
 COPY tsat.py /root/tsat.py
 
