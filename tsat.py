@@ -36,8 +36,8 @@ class Tsat:
     def _parse_tags(self, tagstr):
         tags = {}
         for p in tagstr.split(','):
-            for t in p.split('='):
-                tags[t[0]] = t[1]
+            t = p.split('=')
+            tags[t[0]] = t[1]
         return tags
 
 
