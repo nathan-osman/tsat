@@ -20,7 +20,7 @@ ENV \
     INFLUXDB_PASSWORD= \
     INFLUXDB_TAGS=
 
-CMD python /root/tsat.py \
+CMD python3 /root/tsat.py \
     --influxdb-host "$INFLUXDB_HOST" \
     --influxdb-port "$INFLUXDB_PORT" \
     --influxdb-database "$INFLUXDB_DATABASE" \
