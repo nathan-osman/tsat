@@ -19,7 +19,7 @@ class Tsat:
         self._interval = args.interval
         self._tags = self._parse_tags(args.influxdb_tags)
 
-    def run():
+    def run(self):
         while True:
             t = self._sensor.get_temperature()
             self._client.write_points([
