@@ -17,7 +17,7 @@ class Tsat:
         )
         self._sensor = W1ThermSensor()
         self._interval = args.interval
-        self._tags = self._parse_tags(args.tags)
+        self._tags = self._parse_tags(args.influxdb_tags)
 
     def run():
         while True:
